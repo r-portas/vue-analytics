@@ -7,8 +7,8 @@ export default class AnalyticsPlugin {
   trackView (screenName) {
     logDebug('Dispatching TrackView', { screenName })
 
-    ga('set', 'screenName', screenName)
-    ga('send', 'screenview')
+    ga('set', 'page', screenName)
+    ga('send', 'pageview')
   }
 
   /**
